@@ -24,6 +24,7 @@ nav li {
     padding: 0px auto;
     margin-top: 10px;
     list-style: none;
+    background-color: #fcfcfc;
 }
 nav li a p {
     text-align: center;
@@ -38,6 +39,9 @@ div.bd {
     min-height: calc(100vh);
     background-color: #fcfcfc !important;
     display: block;
+}
+div.bd ul li {
+    background-color: #fcfcfc;
 }
 h1.tt {
     margin: 20px 0 10px;
