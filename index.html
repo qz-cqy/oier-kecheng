@@ -40,7 +40,7 @@
                     request.onload = function() {
                         if(request.status == 200) {
                             var json = JSON.parse(request.responseText);
-                            console.log(json);
+                            //console.log(json);
                             var pos = document.getElementById("list1");
                             json.links.map(links => {
                                 var liPos = document.createElement("li");
