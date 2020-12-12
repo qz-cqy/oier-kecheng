@@ -21,6 +21,24 @@ nav li a p {
     text-align: center;
     font-size: 70%;
 }
-nav img.logo {
+img.logo {
     width: 70px;
+}
+div.bd {
+    margin-left: 70px;
+    padding: 4px;
+    min-height: calc(100vh);
+    background-color: #fcfcfc;
+    display: block;
+}
+h1.tt {
+    margin: 20px 0 10px;
+    padding: 0;
+    font-style: bold !important;
+    color: #009688 !important;
+    text-align: center !important;
+    margin: 1.5em 5px !important;
+    padding: 0.5em 1em !important;
+    font-size: 24px !important;
+    border-bottom: 1px solid #ddd !important;
 }

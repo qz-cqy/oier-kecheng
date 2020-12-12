@@ -7,8 +7,49 @@
     </head>
     <body>
         <nav>
-            <img src="/favicon.ico" class="logo"></img>
+            <img class="logo" src="/favicon.ico"></img>
+            <li>
+                <a href="/">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <p>主页</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/qz-cqy/oier-kecheng">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    <p>仓库</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/qz-cqy/oier-kecheng/blob/master/CONTRIBUTION">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    <p>贡献</p>
+                </a>
+            </li>
         </nav>
+        <div class="bd">
+            <h1 class="tt">线索列表</h1>
+            <ul id="list1"></ul>
+            <script>
+                window.onload = function() {
+                    var url = "data.json";
+                    var request = new XMLHttpRequest();
+                    request.open("get", url);
+                    request.send(null);
+                    request.onload = function() {
+                        if(request.status == 200) {
+                            var json = JSON.parse(request.responseText);
+                            var pos = document.getElementById("list1");
+                            json.links.map(links => {
+                                var liPos = document.createElement("li");
+                                liPos.innerHTML = `<a href="${links.href}>${links.title} - From: ${links.from}</a>"`;
+                                pos.append(liPos);
+                            });
+                        }
+                    }
+                }
+            </script>
+        </div>
         <!-- -->
     </body>
 </html>
