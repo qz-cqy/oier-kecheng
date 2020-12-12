@@ -6,5 +6,8 @@
         { "title" : "关于 2020 年山东某家长借假警察之手把参加 OI 的成年孩子强行送去戒网瘾学校", "href" : "https://zhuanlan.zhihu.com/p/322400052", "from" : "zhihu" }, 
         { "title" : "SD省有一个OIer被送到戒网瘾学校了", "href" : "https://www.luogu.com.cn/discuss/show/282170", "from" : "luogu" }, 
         { "title" : "Problem M - THUPC2021", "href" : "javascript:void(0)", "from" : "THUPC2021" }
+    ], 
+    "posts" : [
+        { "title" : "示例", "href" : "/post/example.md", "author" : "default" }
     ]
 }

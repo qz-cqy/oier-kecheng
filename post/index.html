@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>oier-kecheng</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="/favicon.ico"></img>
+        <li>
+            <a href="/">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <p>主页</p>
+            </a>
+        </li>
+        <li>
+            <a href="/post">
+                <i class="fa fa-file" aria-hidden="true"></i>
+                <p>文章</p>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/qz-cqy/oier-kecheng">
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <p>仓库</p>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/qz-cqy/oier-kecheng/blob/master/CONTRIBUTION">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                <p>贡献</p>
+            </a>
+        </li>
+    </nav>
+    <div class="bd">
+        <h1 class="tt">文章列表</h1>
+        <ol id="list1"></ol>
+        <script>
+            window.onload = function () {
+                var url = "data.json";
+                var request = new XMLHttpRequest();
+                request.open("get", url);
+                request.send(null);
+                request.onload = function () {
+                    if (request.status == 200) {
+                        var json = JSON.parse(request.responseText);
+                        //console.log(json);
+                        var pos = document.getElementById("list1");
+                        json.posts.map(posts => {
+                            var liPos = document.createElement("li");
+                            liPos.innerHTML = `<a href="${posts.href}">${posts.title} - Author: ${posts.author}</a>`;
+                            pos.append(liPos);
+                        });
+                    }
+                }
+            }
+        </script>
+        <hr>
+        <p>本站访问量：</p>
+        <a href="https://flagcounter.me/details/b82">
+            <img src="https://flagcounter.me/b82/" alt="Flag Counter">
+        </a>
+    </div>
+    <!-- -->
+</body>
+
+</html>
