@@ -21,3 +21,6 @@ nav li a p {
     text-align: center;
     font-size: 70%;
 }
+nav li img.logo {
+    width: 70px;
+}
