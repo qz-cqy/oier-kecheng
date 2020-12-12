@@ -40,7 +40,7 @@ div.bd {
     background-color: #fcfcfc !important;
     display: block;
 }
-div.bd ul li, div.bd ul li a, nav li a {
+div.bd ul li, div.bd ul li a, nav li a, div.bd h1 {
     background-color: #fcfcfc !important;
 }
 h1.tt {
