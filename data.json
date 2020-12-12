@@ -8,6 +8,6 @@
         { "title" : "Problem M - THUPC2021", "href" : "javascript:void(0)", "from" : "THUPC2021" }
     ], 
     "posts" : [
-        { "title" : "示例", "href" : "/post/example.md", "author" : "default" }
+        { "title" : "示例", "href" : "https://github.com/qz-cqy/oier-kecheng/blob/master/post/example.md", "author" : "default" }
     ]
 }
