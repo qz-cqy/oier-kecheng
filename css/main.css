@@ -51,6 +51,9 @@ h1.tt {
     font-size: 24px !important;
     border-bottom: 1px solid #ddd !important;
 }
+ol#list1 {
+    margin-left: 30px;
+}
 div.bd ol li, div.bd ol li a, div.bd h1.tt, div.bd p {
     background-color: #fcfcfc !important;
 }
