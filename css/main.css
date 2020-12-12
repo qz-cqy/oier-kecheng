@@ -24,7 +24,7 @@ nav li {
     padding: 0px auto;
     margin-top: 10px;
     list-style: none;
-    background-color: #fcfcfc;
+    background-color: #fcfcfc !important;
 }
 nav li a p {
     text-align: center;
@@ -40,8 +40,8 @@ div.bd {
     background-color: #fcfcfc !important;
     display: block;
 }
-div.bd ul li {
-    background-color: #fcfcfc;
+div.bd ul li, div.bd ul li a, nav li a {
+    background-color: #fcfcfc !important;
 }
 h1.tt {
     margin: 20px 0 10px;
