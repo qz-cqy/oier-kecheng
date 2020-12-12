@@ -28,7 +28,7 @@ div.bd {
     margin-left: 70px;
     padding: 4px;
     min-height: calc(100vh);
-    background-color: #fcfcfc;
+    background-color: #fcfcfc !important;
     display: block;
 }
 h1.tt {
