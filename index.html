@@ -44,7 +44,7 @@
                             var pos = document.getElementById("list1");
                             json.links.map(links => {
                                 var liPos = document.createElement("li");
-                                liPos.innerHTML = `<a href="${links.href}>${links.title} - From: ${links.from}</a>"`;
+                                liPos.innerHTML = `<a href="${links.href}">${links.title} - From: ${links.from}</a>`;
                                 pos.append(liPos);
                             });
                         }
