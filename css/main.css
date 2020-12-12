@@ -40,9 +40,6 @@ div.bd {
     background-color: #fcfcfc !important;
     display: block;
 }
-div.bd ul li, div.bd ul li a, nav li a, div.bd h1 {
-    background-color: #fcfcfc !important;
-}
 h1.tt {
     margin: 20px 0 10px;
     padding: 0;
@@ -53,4 +50,10 @@ h1.tt {
     padding: 0.5em 1em !important;
     font-size: 24px !important;
     border-bottom: 1px solid #ddd !important;
+}
+div.bd ol li, div.bd ol li a, nav li a, div.bd h1.tt {
+    background-color: #fcfcfc !important;
+}
+nav li a, nav li a i, nav li a p, nav li img {
+    background-color: #fafafa;
 }
